@@ -143,7 +143,7 @@ function confirmOrder() {
     .then(response => {
         if (response.ok) {
             alert('Order sent to bot!');
-            window.location.href = 'YOUR_BOT_URL';  // Redirect to the bot's link
+            window.location.href = 'https://creator.voiceflow.com/project/66efc26f425398f11ccf9d46/canvas/64dbb6696a8fab0013dba194';  // Redirect to the bot's link
         } else {
             alert('Error placing order.');
         }
