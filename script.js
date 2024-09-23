@@ -111,6 +111,7 @@ function removeItemFromOrder(name) {
 }
 
 // Confirm order and send back to WhatsApp bot
+// Confirm order and send back to Voiceflow bot
 function confirmOrder() {
     const note = document.getElementById('notes').value;
     let orderDetails = {
@@ -128,7 +129,8 @@ function confirmOrder() {
     }
 
     // Send order details back to Voiceflow bot
-    const voiceflowReturnUrl = `https://api.voiceflow.com/runtime/66efc26f425398f11ccf9d46/interact?user_id={user_id}`;
+    const voiceflowReturnUrl = `https://api.voiceflow.com/runtime/66efc26f425398f11ccf9d46/interact?user_id=test_user_12345`; // Replace with actual user_id during testing
+
     fetch(voiceflowReturnUrl, {
         method: 'POST',
         headers: {
